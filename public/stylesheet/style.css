@@ -471,6 +471,9 @@
           height: 80vh;
 
          }
+         .nav img{
+           width: 23%;
+         }
 
         
  
@@ -493,6 +496,9 @@
      text-align: center;
 
    }
+   .nav img{
+     width: 32%;
+    }
   
      
  }
