@@ -471,6 +471,9 @@
           height: 80vh;
 
          }
+         .nav img{
+           width: 23%;
+         }
 
         
  
@@ -485,15 +488,16 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
-
-
+ 
    }
    .y1 .s1, .s2{
      width: 100%;
      text-align: center;
 
    }
-  
+   .nav img{
+     width: 32%;
+    } 
      
  }
  
