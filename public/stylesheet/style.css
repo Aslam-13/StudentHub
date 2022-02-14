@@ -1,0 +1,501 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   overflow-x: hidden;
+   line-height: 1.4;
+  scroll-behavior: smooth;
+}
+ .nav{
+   width: 100vw;
+   height: 7rem;
+    display: flex;
+   justify-content: space-between;
+   background-color: #111;
+ }
+ .nav span{
+   color: #fff;
+   padding: 1.8rem 1.3rem;
+ }
+ .nav img{
+   height: 100%;
+   width: 9%;
+   margin-right: 1.2rem;
+      }
+      .left-side {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+      }
+      .left-side span{
+        color: #f1f1f1;
+      }
+      
+      .left-side a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .left-side a:hover {
+        color: #f1f1f1;
+      }
+      
+      .left-side .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        padding-top: 0.4rem;
+      }
+
+.read-img{
+  background: url('../Images/read-more.jpg') no-repeat center center/cover;
+  width: 100vw;
+  height: 85vh;
+  color: #fff;
+  display: flex;
+  text-align: justify;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
+}      
+.read-img h1, h2, h3{
+  padding-top: 0.8rem;
+  font-weight: bold;
+  font-size: 2rem;
+  }
+  .read-more-btn{
+    margin: 1.2rem;
+  
+   }
+   .btn{
+     padding: 1rem 1.4rem;
+     font-weight: bold;
+     font-size: 1.4rem;
+     background-color: #111;
+     color: #fff;
+     border : 2px solid black;
+   }
+   .btn:hover{
+     color: #111;
+     background-color: #fff;
+     cursor: pointer;
+    }
+    #Placements{
+
+    height: 60vh;
+      width: 100vw;
+       background-color: #1236C9;
+      color: #f1f1f1;
+      text-align: start;
+    }
+    .card h1, p{
+      padding-top: 3em;
+      padding-left: 1rem;
+    }
+    .btn1{
+      padding: 1.4rem 1.8rem;
+      margin: 3rem;
+      border-radius: 80%;
+      background-color: #111;
+      color: #ccc;
+      font-weight: bold;
+      font-size: 1.3rem ;
+
+    }
+    .btn1:hover{
+      background-color: #ccc;
+      color: navy;
+    }
+    .notes{
+      width: 100vw;
+      height: 50vh;
+      background-color: #14A76C;
+
+    }
+    .card1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+     }
+     .card1 h1{
+       border-bottom: 2px solid black;
+       padding: 1rem;
+     }
+     .years{
+       display: flex;
+       justify-content: center;
+        padding: 2rem; 
+            }
+  .btn-notes{
+    margin: 1.4rem;
+    padding: 1.3rem 1.6rem;
+    background-color: #61892F;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f1f1f1; 
+
+  }
+  .btn-notes:hover{
+    background-color: #86C232;
+   color: #000;
+   cursor: pointer;
+     }
+           
+    .blogs{
+      width: 100vw;
+      height: 70%;
+      background-color: #CAFAFE;
+     } 
+     .blogs .main{
+       text-align: center;
+     }
+    .card-b1{
+      padding: 1rem; 
+
+    }
+     .card-b1 h1, p, a{
+       padding: 0.4rem;
+     }
+     .btnb{
+       margin:  0.4rem;
+       padding: 1.2rem 1.4rem;
+       background-color: #553D67;
+       color: #f1f1f1;
+       font-size: 1.1rem;
+       font-weight: bold;
+     }
+     .btnb:hover{
+       background-color: #99738E ;
+       color: #000;
+       cursor: pointer;
+     }
+     .footer{
+       height: 30%;
+       width: 100vw;
+       background-color: #5D5C61;
+       color: #f1f1f1;
+       text-align: center;
+       padding: 1.2rem;
+     } 
+     .footer .copyright p{
+       font-size: 1.4rem;
+       font-weight: bold;
+       padding: 1rem;
+     }
+     .main-notes{
+       text-align: center;
+       background-color: #379683;
+       padding: 1rem;
+       border-bottom: 2px solid #111;
+      }
+     .y1{
+       display: flex;
+       flex-direction: row;
+        justify-content: space-evenly;
+        
+      }
+      
+      .y1 .s1, .s2{
+        background-color: #CAFAFE;
+        width: 50%;
+        height: 70%;
+        padding: 2rem;
+        font-size: 1.2rem;
+        font-weight: bold; 
+      }  
+      .y1 .s1 h2{
+        padding-bottom: 0.5rem;
+      } 
+      .y1 .s2 h2{
+        padding-bottom: 0.5rem;
+      }
+      .y1 .s2{
+        background-color: #B4DFE5;
+      }
+      .y1 .s3{
+        background-color: #B4DFE5;
+      }
+      .y1 .s4{
+        background-color: #CAFAFE;
+ 
+      }
+
+      .l{
+        padding: 1.1rem 1.2rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0.9rem;
+        background-color: #1B97E5;
+
+      }
+      .l:hover{
+        background-color: #10E7DC;
+        cursor: pointer;
+
+      }
+      .r{
+        padding: 1.1rem 1.2rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0.9rem;
+        background-color: #10E7DC;
+
+      }
+      .r:hover{
+        background-color: #1B97E5;
+        cursor: pointer;
+      }
+      .login{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+      }
+      .login-box{
+        background-color: #5D5C61;
+        padding: 3rem  8rem;
+         color: #fff;
+       }
+      .login-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.2rem;
+         }
+        .names{
+          width: 100%;
+         }
+        .names label, input{
+          display: block;
+            justify-content: center;
+          } 
+      .names label{
+        padding: 0.2rem;
+        font-size: 1.1rem;
+      }
+      .names input{
+        padding: 0.4rem ;
+        margin: 0.4rem;
+        width: 100%;
+      }
+      .reg{
+        width: 100%;
+      }
+      .error{
+        display: flex;
+          color: red;
+      }
+      .resources-container{
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+        background-color: #7d6292;
+           
+      }
+      .resources{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+
+      }
+      .dsa{
+        background-color: #5D5C61 ;
+        margin: 2rem;
+        padding: 1.3rem;
+        color: #fff;
+        text-align: center;
+        line-height: 3;
+
+          border: 2px solid red;
+       }
+       .resource-btn{
+         background-color: #1B97E5;
+         font-weight: bold;
+         font-size: 1.2rem;
+         padding: 1rem;
+         margin-top: 1.3rem;
+       }
+       .resource-btn:hover{
+          background-color: #10E7DC;
+          opacity: 0.9;
+          cursor: pointer;
+   
+        }
+        .guidance{
+          width: 100%;
+          padding: 2rem;
+
+        }
+        .guidance-top{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .guidance header{
+          font-size: 1.3rem;
+          font-weight: bold;
+          padding: 1.4rem;
+         }
+         .info h2, h3{
+           border-bottom: 2px solid black;
+         }
+         .blog-section{
+           margin: 1.4rem;
+           border-bottom: 2px solid #111;
+ 
+          }
+          .blog-section h1{
+            padding: 1.4rem;
+          }
+          .show1{
+            margin: 2.4rem;
+            padding: 1.2rem;
+            border: 2px solid black;
+          } 
+          .show1 h4{
+            padding: 0.2rem;
+            font-size: 1.3rem;
+             font-weight: bold;
+             }
+             .show1 div{
+               padding: 0.4rem;
+             }
+          .show-title{
+            padding: 1.9rem;
+          } 
+          .show-title div{
+            padding: 0.4rem   1.3rem;
+            border-bottom: 2px solid black;
+          }
+          .show-des{
+            padding: 0.3rem 1.2rem;
+             border-bottom: 2px solid black;
+            margin: 0.4rem  1.3rem;
+          }
+          .show-blog{
+            padding: 1.2rem;
+           }
+           .form{
+              padding: 1.3rem;
+           }
+           .form-inside{ 
+             padding: 1.2rem;
+             overflow-x: hidden;
+             
+                
+           }
+           .form-inside label{
+             display: block;
+           }
+           .form-inside form{
+             padding: 1rem;
+           }
+           .form-inside input, textarea {
+             padding: 0.4rem;
+               margin: 0.8rem;
+             display: block;
+             width: 100%;
+           }
+           .form-inside button{
+             width: 100%;
+           }
+   
+
+ 
+ 
+              
+ @media screen and (max-width: 850px ){
+   .resources{
+     grid-template-columns: repeat(1, 1fr);
+     }
+     .resources-container{
+       padding: 1.3rem;
+      }
+      .dsa{
+       padding: 1rem  ;
+       margin: 0.7rem  ;
+     }
+     .main-notes{
+       padding: 0;
+      }
+     .y1 .s1, .s2{
+       padding: 1rem;
+       height: 100%;
+       } 
+       .y1 a{
+         margin-left: 0.1rem;
+       }
+       .login-box{
+         padding: 1rem 0.9rem;
+        }
+        .names label{
+          margin: 0.8rem;
+        }
+        .names input{
+          margin: 0.8rem;
+        }
+        #Placements{
+          height: 80vh;
+        }
+        .card h1, p{
+          padding-top: 1rem;
+          padding-left: 0.8rem; 
+
+        }
+        .card button{
+          margin: 0;
+        }
+        .notes{
+          height: 80vh;
+
+         }
+
+        
+ 
+
+
+ 
+      
+ }   
+ @media screen and (max-width: 400px){
+   .y1{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+
+   }
+   .y1 .s1, .s2{
+     width: 100%;
+     text-align: center;
+
+   }
+  
+     
+ }
+ 
+  
+  

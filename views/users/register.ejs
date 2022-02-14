@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheet/style.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+   <title>Document</title>
+</head>
+<body>
+  <div class="login">
+    <div class="login-box">
+      <% if(messages.error){  %>
+      <div class="error"><%= messages.error%></div>
+      <%}%>
+      <div class="login-top">
+        <span><i class="fa fa-user fa-3x"> </i></span>
+        <h1>Register</h1>
+      </div>
+      <div class="names">
+        <form action="/users/register" method="POST">
+           <label for="name">Username</label>
+          <input type="text" name="name" id="name" placeholder="Enter username">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email">
+           <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter password">
+          <input type="reset" value="Reset" class="btnb">
+          <input type="submit" value="submit" class="btnb" > 
+         </form> 
+      </div>
+      <div class="login-bottom">
+        <p>Already have an account.</p>
+         <a href="/users/login"><button class="btn reg">  Login </button></a>
+      </div>
+    
+    </div>
+  </div>
+</body>
+</html>

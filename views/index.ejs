@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href=" /stylesheet/style.css" type="text/css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="left-side">
+    <span><i class=" fa fa-times fa-2x cross closebtn"> </i></span>
+     <a href="/guidance">Placements</a>
+     <a href="/resources">Resources</a>
+    <a href="/notes">Notes</a>
+    <a href="/blogs">Blogs</a>
+    <a href="/write">Write a blog</a>
+    <% if( !user) {  %> 
+      <a href="/users/login">Login</a>
+      <a href="/users/register">Register</a> 
+      <% } else { %> 
+        <a href="/logout">Logout</a> 
+      <% } %> 
+
+    </div>
+  <div class="nav"> 
+     <span><i class="fas fa-bars fa-3x open"></i> </span>
+     <img src="/Images/navbar-logo.jpg" alt="Not Found "> 
+  </div>
+  <div class="read-more">
+    <div class="read-img">
+      <h1>A place for students by the student</h1>
+      <h2>Go Ahead... </h2>
+      <h3>Start your journey</h3>
+      <div class="read-more-btn">
+        <a href="#Placements"><button class="btn">Read More</button></a>
+      </div>
+      </div>
+  
+  </div>
+  <div id="Placements">
+    <div class="card">
+      <h1>So here is the skills you need to have to become a software engineer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cumque vitae nihil voluptate ratione, consequuntur error natus optio, quisquam officia itaque fugit aliquam reprehenderit quo eum nisi a iste sit sequi dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, commodi. Similique, vitae earum.</p>
+      <a href="/guidance"><button class="btn1">Learn More</button></a>
+      </div>
+
+
+  </div>
+  <div class="notes">
+    <div class="card1">
+      <h1>Engineering Notes Section</h1>
+      <h1>Here you will find engineering notes with some previous papers</h1>
+    </div>
+    <div class="years">
+      <a href="/notes"><button class="btn-notes">Get Notes</button></a>
+       
+    </div>
+  </div>
+  <div class="blogs">
+    <h1 class="main">Blogs Section</h1>
+    <div class="card-b1">
+      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur iste dolorum, eius provident quidem optio alias delectus atque neque est? Placeat, hic?</p>
+      <a href="/blogs "><button class="btnb">Read More</button></a>
+    </div>
+    <div class="card-b1">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing  </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, pariatur hic. Obcaecati fugit aliquam, saepe vel rerum distinctio qui molestiae, veritatis eos, facere dolore ab?d</p>
+      <a href="/blogs"><button class="btnb">Read More</button></a>
+    </div>
+  </div>
+    <footer class="footer">
+      <div class="copyright">
+        <p>Student-hub  2022</p>
+        <p>copyright &copy;. All rights reserved</p>
+      </div>
+    </footer>
+
+  <script>
+    document.querySelector('.open').addEventListener('click', open);
+    document.querySelector('.cross').addEventListener('click', close);
+    function open(){
+      document.querySelector('.left-side').style.width = "250px";
+    }
+    function close()
+    {
+      document.querySelector('.left-side').style.width = "0"
+    }
+   </script>
+</body>
+</html>

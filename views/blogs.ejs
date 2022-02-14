@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href=" /stylesheet/style.css" type="text/css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="left-side">
+    <span><i class=" fa fa-times fa-2x cross closebtn"> </i></span>
+     <a href="/guidance">Placements</a>
+     <a href="/resources">Resources</a>
+    <a href="/notes">Notes</a>
+    <a href="/blogs">Blogs</a>
+    <a href="/write">Write a blog</a>
+    <a href="/users/login">Login</a>
+    <a href="/users/register">Register</a> 
+  </div>
+  <div class="nav"> 
+     <span><i class="fas fa-bars fa-3x open"></i> </span>
+     <img src="/Images/navbar-logo.jpg" alt="Not Found "> 
+  </div>
+ 
+  <div class="blog-section">
+    <h1>Blogs Section </h1>
+    <a href="/write"><button class="btnb">New Article</button></a>
+    <a href="/guidance"><button class="btnb">Placement</button></a>
+  </div>
+  <div class="show">
+    <% articles.forEach(article => { %>
+      <div class="show1">
+
+        <h4 class="  "><%= article.title %></h4>
+        <%= article.createdAt.toLocaleDateString() %>
+        <div class="   "><%= article.description %></div>
+        <a href="/blogs/<%= article.id %> "><button class="btnb">Read More</button></a>
+      </div>
+             
+     <% }) %>
+   </div>
+
+
+
+
+    <footer class="footer">
+      <div class="copyright">
+        <p>Student-hub  2022</p>
+        <p>copyright &copy;. All rights reserved</p>
+      </div>
+    </footer>
+
+  <script>
+    document.querySelector('.open').addEventListener('click', open);
+    document.querySelector('.cross').addEventListener('click', close);
+    function open(){
+      document.querySelector('.left-side').style.width = "250px";
+    }
+    function close()
+    {
+      document.querySelector('.left-side').style.width = "0"
+    }
+   </script>
+</body>
+</html>
