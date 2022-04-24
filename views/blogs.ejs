@@ -19,14 +19,14 @@
 <body>
   <div class="left-side">
     <span><i class=" fa fa-times fa-2x cross closebtn"> </i></span>
+
+    <a href="/">Home</a>
+
      <a href="/guidance">Placements</a>
      <a href="/resources">Resources</a>
     <a href="/notes">Notes</a>
     <a href="/blogs">Blogs</a>
-    <a href="/write">Write a blog</a>
-    <a href="/users/login">Login</a>
-    <a href="/users/register">Register</a> 
-  </div>
+    <a href="/write">Write a blog</a> 
   <div class="nav"> 
      <span><i class="fas fa-bars fa-3x open"></i> </span>
      <img src="/Images/navbar-logo.jpg" alt="Not Found "> 
@@ -42,7 +42,10 @@
       <div class="show1">
 
         <h4 class="  "><%= article.title %></h4>
-        <%= article.createdAt.toLocaleDateString() %>
+         <p>
+
+           <%= article.createdAt.toLocaleDateString() %>
+         </p>
         <div class="   "><%= article.description %></div>
         <a href="/blogs/<%= article.id %> "><button class="btnb">Read More</button></a>
       </div>
